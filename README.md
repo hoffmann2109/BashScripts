@@ -12,6 +12,8 @@ Scripts in this repository are intended to either be sourced in your `.bashrc` f
   
 2. **`extract.sh`** - A utility script for extracting various archive formats (e.g., `.tar.gz`, `.zip`, `.rar`). It simplifies handling archives by allowing you to use a single command to extract any supported format without worrying about syntax.
 
+3. **`Timer.sh`** - A simple countdown timer script. It counts down from a specified number of seconds, displaying the remaining time each second, and alerts you when the time is up with a sound.
+
 ### Getting Started
 
 To use scripts that are intended to be sourced, open the `.bashrc` file with your favourite text editor and add the lines in `cd.sh` at the bottom.
@@ -26,6 +28,7 @@ For standalone scripts, make sure the script is executable and run it directly f
 chmod +x script.sh
 ./script.sh
 ```
+Note: Replace script.sh with the script you wish to execute, such as `Timer.sh`.
 
 ### Future Additions
 
