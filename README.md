@@ -8,27 +8,47 @@ Scripts in this repository are intended to either be sourced in your `.bashrc` f
 
 ### Current Scripts
 
-1. **`cd.sh`** - Enhances the `cd` command by automatically displaying the contents of the specified folder (ls).
-  
-2. **`extract.sh`** - A utility script for extracting various archive formats (e.g., `.tar.gz`, `.zip`, `.rar`). It simplifies handling archives by allowing you to use a single command to extract any supported format without worrying about syntax.
+1. **`cd.sh`**  
+   Enhances the `cd` command by automatically displaying the contents of the specified folder (`ls`).
 
-3. **`Timer.sh`** - A simple countdown timer script. It counts down from a specified number of seconds, displaying the remaining time each second, and alerts you when the time is up with a sound.
+2. **`extract.sh`**  
+   A utility script for extracting various archive formats (e.g., `.tar.gz`, `.zip`, `.rar`). It simplifies handling archives by allowing you to use a single command to extract any supported format without worrying about syntax.
+
+3. **`Timer.sh`**  
+   A simple countdown timer script. It counts down from a specified number of seconds, displaying the remaining time each second, and alerts you when the time is up with a sound.
+
+4. **`update.sh`**  
+   Automates the process of updating and maintaining your system. It performs updates, upgrades, removes orphaned dependencies, and cleans the package cache. Logs are saved in `/home/user/.update.log`, and the machine reboots automatically after updates.
+
+   **Features:**  
+   - Logs update actions with timestamps.
+   - Removes unused dependencies.
+   - Reboots the system after updates.
+
+   **Usage:**
+   ```bash
+   chmod +x update.sh
+   ./update.sh
+   ```
 
 ### Getting Started
 
-To use scripts that are intended to be sourced, open the `.bashrc` file with your favourite text editor and add the lines in `cd.sh` at the bottom.
+#### For Scripts to be Sourced:
+To use scripts that are intended to be sourced, open the `.bashrc` file with your favorite text editor and add the necessary lines from the script.
 
 ```bash
 nano ~/.bashrc
 ```
 
-For standalone scripts, make sure the script is executable and run it directly from your terminal:
+#### For Standalone Scripts:
+Make sure the script is executable and run it directly from your terminal:
 
 ```bash
 chmod +x script.sh
 ./script.sh
 ```
-Note: Replace script.sh with the script you wish to execute, such as `Timer.sh`.
+
+Replace `script.sh` with the name of the script you wish to execute (e.g., `update.sh`).
 
 ### Future Additions
 
