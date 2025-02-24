@@ -31,6 +31,7 @@ Scripts in this repository are intended to either be sourced in your `.bashrc` f
    ./update.sh
    ```
 5. **`cleanKernelEntriesFedora.sh`**
+   
 This script helps in cleaning up old kernel entries on Fedora systems by checking if the number of installed kernels exceeds the defined limit (KERNEL_LIMIT). If it does, it removes old kernels (except the current running one) and aligns the rescue kernel with the current kernel.
 
    **Features:**
