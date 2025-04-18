@@ -17,8 +17,8 @@ Scripts in this repository are intended to either be sourced in your `.bashrc` f
 3. **`Timer.sh`**  
    A simple countdown timer script. It counts down from a specified number of seconds, displaying the remaining time each second, and alerts you when the time is up with a sound.
 
-4. **`update.sh`**  
-   Automates the process of updating and maintaining your system. It performs updates, upgrades, removes orphaned dependencies, and cleans the package cache. Logs are saved in `/home/user/.update.log`, and the machine can be rebooted after the updates.
+4. **`update.sh`** (Debian-based systems) 
+   Automates the process of updating and maintaining your Debian-based system. It performs updates, upgrades, removes orphaned dependencies, and cleans the package cache. Logs are saved in `/home/user/.update.log`, and the machine can be rebooted after the updates.
 
    **Features:**  
    - Logs update actions with timestamps.
